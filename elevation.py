@@ -48,6 +48,14 @@ def print_grade_per_meter(tracks, distance_offset=0):
                     cumulative_distance = 0
                     cumulative_points = []
 
+    # Goal is to identify how steep a "section" of road is and if there are any perceptible grade
+    # changes.
+    # How to define? over a certain length? 100 meters? 200 meters? It should identify the "steep
+    # bit" of Tunitas effectively since that basically has 3 sections.
+    # Or some way to visualize the distribution over the slope? Note that it's helpful to be able
+    # to see the slope as wide as possible on the screen.
+    # Maybe define pain thresholds and give color to them.
+
     return total_distance
 
 
